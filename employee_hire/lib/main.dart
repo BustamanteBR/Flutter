@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
       p(c(col('Engenheiro de Dados', 0, 10, 50, 0)), 20, 15, 20, 15),
       p(c(col('Professor', 0, 10, 175, 0)), 20, 15, 20, 15),
       p(c(col('Especialista de TI', 0, 10, 90, 0)), 20, 15, 20, 15),
-      p(c(col('', 0, 10, 90, 0)), 20, 15, 20, 15),
+      p(c(col('Suporte de TI', 0, 10, 90, 0)), 20, 15, 20, 15),
     ]);
   }
 
@@ -70,8 +70,15 @@ class _HomeState extends State<Home> {
         children: <Widget>[
           p(t(name, 25, Colors.teal), L, T, R, B),
           p(t('Salário: R\$ _____.__', 20, Colors.black), 0, 5, 115, 0),
-          p(t('Descrição:---------------------------------', 20, Colors.black), 5, 5, 10, 0),
-          p(t('-------------------------------------------------', 20, Colors.black), 5, 5, 10, 0),
+          p(t('Descrição:---------------------------------', 20, Colors.black),
+              5, 5, 10, 0),
+          p(
+              t('-------------------------------------------------', 20,
+                  Colors.black),
+              5,
+              5,
+              10,
+              0),
           p(t('Contato: (XX) XXXXX-XXXX', 20, Colors.black), 0, 5, 35, 0),
         ]);
   }

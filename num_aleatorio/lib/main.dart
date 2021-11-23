@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
       change_green = Colors.green;
       change_cont = Colors.yellow;
       _pressed = false;
-      im = "assets/images/BackStatic.png";
+      im = "assets/images/BackStatic.jpg";
       x = null;
     });
   }
@@ -50,10 +50,10 @@ class _HomeState extends State<Home> {
 
       if (guessed == x) {
         change_cont = Colors.green;
-        im = "assets/images/BackGreen.png";
+        im = "assets/images/BackGreen.jpg";
       } else {
         change_cont = Colors.red;
-        im = "assets/images/BackRed.png";
+        im = "assets/images/BackRed.jpg";
       }
     });
   }
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
             fontSize: 20,
           )),
       centerTitle: true,
-      backgroundColor: Colors.purple,
+      backgroundColor: Colors.black,
     );
   }
 
@@ -135,7 +135,7 @@ class _HomeState extends State<Home> {
       keyboardType: TextInputType.number,
       controller: guess,
       decoration: InputDecoration(
-        hintText: "Qual número ela está pensando?",
+        hintText: "Qual número estou pensando?",
         hintStyle: TextStyle(fontSize: 15, color: Colors.black),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(

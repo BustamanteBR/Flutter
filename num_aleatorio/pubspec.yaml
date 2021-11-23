@@ -47,9 +47,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/images/BackGreen.png
-     - assets/images/BackRed.png
-     - assets/images/BackStatic.png
+     - assets/images/BackGreen.jpg
+     - assets/images/BackRed.jpg
+     - assets/images/BackStatic.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
