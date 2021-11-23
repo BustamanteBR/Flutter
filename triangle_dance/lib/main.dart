@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Negocinho do renan',
+      title: 'Tropa do Bustamante',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Hello Im a Flutter'),
+      home: MyHomePage(title: 'Ola eu sou Flutter'),
     );
   }
 }
@@ -46,7 +46,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  var _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873258618881978448/Static.gif';
+  var _imagem =
+      'https://i.pinimg.com/originals/85/42/6f/85426f9ac4242d91a8f69f5276fd0d5d.gif';
 
   void _incrementCounter() {
     setState(() {
@@ -61,32 +62,40 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _changeImage() {
     setState(() {
-      if(_counter == 1){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873257758495997972/unknown.png';
+      if (_counter == 1) {
+        _imagem =
+            'https://pm1.narvii.com/6853/89bcdbd2dd8e56ea15362242903a3ab431e2e8fav2_hq.jpg';
       }
-      if(_counter == 2){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873257821079212042/unknown.png';
+      if (_counter == 2) {
+        _imagem =
+            'https://lh5.googleusercontent.com/p3zyaIq86afCaRyZ3_r1SMC0C1Fl48_a_pSdNRv2oS9J_X62d9P0IwtedZzNmq6eixIuKwONHOOfVlGXG8dQuqsI_6gYWNStYNKBL3UzLmUtkYkCdCPnNXvVGhtGNgR4W_9Y4KHi';
       }
-      if(_counter == 3){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873257887076581416/unknown.png';
+      if (_counter == 3) {
+        _imagem =
+            'https://lh4.googleusercontent.com/b8KHO_0CjS7HIMMD_WTrkxF9pJ76xT6WSetjvuDB6N7rCq8Wlwdk_0_IH4MYjtkcN4qTToTZaoMbK0B9i2U_Ww_jggoO4VM0GkZpuD20FY7H7bAhkfPujosP1jJT1fPrw90DT7OZ';
       }
-      if(_counter == 4){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873257945708757002/unknown.png';
+      if (_counter == 4) {
+        _imagem =
+            'https://i.pinimg.com/originals/8a/ee/e1/8aeee13acbaeecb859fd1a3353235c8a.jpg';
       }
-      if(_counter == 5){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873257996967374929/unknown.png';
+      if (_counter == 5) {
+        _imagem =
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRByoPZ7MKsuLnAzpzgBPa8eIT-_Fx-j9RlgCeyn_24XG6tKjxP7QElI2m4OVyw0IY3FkA&usqp=CAU';
       }
-      if(_counter == 6){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873258199229284402/unknown.png';
+      if (_counter == 6) {
+        _imagem =
+            'https://i.pinimg.com/originals/48/87/cd/4887cd11d88a3617456f1d8f6a9cac14.jpg';
       }
-      if(_counter == 7){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873258251796480070/unknown.png';
+      if (_counter == 7) {
+        _imagem = 'https://cdn.ligadosgames.com/imagens/thermite-cke.jpg';
       }
-      if(_counter == 8){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873258305986920569/unknown.png';
+      if (_counter == 8) {
+        _imagem =
+            'https://i2-prod.dailystar.co.uk/incoming/article20035960.ece/ALTERNATES/s1200b/1640680';
       }
-      if(_counter == 9){
-        _imagem = 'https://cdn.discordapp.com/attachments/574428204165758979/873258368876294224/unknown.png';
+      if (_counter == 9) {
+        _imagem =
+            'https://sm.ign.com/ign_br/news/a/atualizaca/atualizacao-de-rainbow-six-siege-traz-ajustes-ao-operador-pu_zpur.jpg';
         _counter = 1;
       }
     });
@@ -135,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Image.network(_imagem),
             Text(
-              'Dança Gatinho',
+              'Chama no Passinho',
               style: Theme.of(context).textTheme.headline3,
             ),
           ],
@@ -149,4 +158,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-

@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.w900, fontSize: 20)),
       centerTitle: true,
-      backgroundColor: Colors.orange[300],
+      backgroundColor: Colors.blue[300],
     );
   }
 
@@ -72,21 +72,11 @@ class _HomeState extends State<Home> {
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child: Container(
-          decoration: _Image(),
           width: 360,
           height: 515,
           //color: Colors.white,
           child: Entitys()),
     );
-  }
-
-// ignore: non_constant_identifier_names
-  _Image() {
-    return BoxDecoration(
-        image: DecorationImage(
-            image: NetworkImage(
-                'https://cdn.discordapp.com/attachments/574428204165758979/883396663954268260/Background.png'),
-            fit: BoxFit.cover));
   }
 
 // ignore: non_constant_identifier_names

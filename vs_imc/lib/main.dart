@@ -25,9 +25,6 @@ class _HomeState extends State<Home> {
   TextEditingController peso = new TextEditingController();
   TextEditingController alt = new TextEditingController();
   String rsp = "";
-  String cats = "";
-  String img =
-      'https://cdn.discordapp.com/attachments/574428204165758979/890993185852108800/GrauIIIPeso.png';
 
   void calculate() {
     setState(() {
@@ -42,34 +39,16 @@ class _HomeState extends State<Home> {
 
       if (imc < 18.5) {
         rsp = "Abaixo do Peso";
-        cats = "Você tem apenas dois gatinhos ; -;";
-        img =
-            'https://cdn.discordapp.com/attachments/574428204165758979/890992155093524490/AbaixoPeso.png';
       } else if (imc < 25) {
         rsp = "Peso Normal";
-        cats = "Você tem 3 gatinhos! Essa é a quantidade ideal!";
-        img =
-            'https://cdn.discordapp.com/attachments/574428204165758979/890992177809883196/NormalPeso.png';
       } else if (imc < 30) {
         rsp = "Sobrepeso";
-        cats = "Parece que você tem um gatinho a mais...";
-        img =
-            'https://cdn.discordapp.com/attachments/574428204165758979/890992196050903100/SobrePeso.png';
       } else if (imc < 35) {
         rsp = "Obesidade Grau I";
-        cats = "Cuidado, muitos gatinhos podem fazer mal para saúde!";
-        img =
-            'https://cdn.discordapp.com/attachments/574428204165758979/890992213025255504/GrauIPeso.png';
       } else if (imc < 40) {
         rsp = "Obesidade Grau II";
-        cats = "Quantos gatinhos! Por favor tome mais cuidado com eles";
-        img =
-            "https://cdn.discordapp.com/attachments/574428204165758979/890992229634695168/GrauIIPeso.png";
       } else {
         rsp = "Obesidade Grau III";
-        cats = "Meu Deus, você precisa parar de adotar gatinhos imediatamente!";
-        img =
-            'https://cdn.discordapp.com/attachments/574428204165758979/890992241965957210/GrauIIIPeso.png';
       }
     });
   }
@@ -93,7 +72,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.yellow[300]);
+        backgroundColor: Colors.blue[300]);
   }
 
   body() {
@@ -101,11 +80,9 @@ class _HomeState extends State<Home> {
       padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
       child: Column(
         children: <Widget>[
-          image(img),
           row(),
           button(),
           answer(rsp, 30),
-          answer(cats, 10),
         ],
       ),
     );
@@ -166,7 +143,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Colors.yellow[300]),
+            backgroundColor: MaterialStateProperty.all(Colors.blue[300]),
           )),
     );
   }

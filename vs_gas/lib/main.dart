@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.red);
+        backgroundColor: Colors.orange);
   }
 
   _body() {
@@ -75,7 +75,6 @@ class _HomeState extends State<Home> {
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          _image(),
           _field("Etanol", etanol),
           _field("Gasolina", gasolina),
           _button(),
@@ -85,21 +84,13 @@ class _HomeState extends State<Home> {
     );
   }
 
-// ignore: non_constant_identifier_names
-  _image() {
-    return Image.network(
-        'https://i.pinimg.com/564x/4f/ff/30/4fff3031eda04e5f55f5e761cf5bcd33.jpg',
-        height: 200,
-        fit: BoxFit.cover);
-  }
-
   _field(String alt, var_name) {
     return Container(
         child: TextField(
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               labelText: alt,
-              labelStyle: TextStyle(color: Colors.red),
+              labelStyle: TextStyle(color: Colors.orange),
             ),
             controller: var_name,
             textAlign: TextAlign.center,
@@ -118,7 +109,7 @@ class _HomeState extends State<Home> {
                   fontSize: 25,
                   fontWeight: FontWeight.bold)),
           style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.red)),
+              backgroundColor: MaterialStateProperty.all(Colors.orange)),
         )));
   }
 

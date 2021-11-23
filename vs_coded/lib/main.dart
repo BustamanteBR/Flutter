@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
             TextField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                  labelText: 'Primeiro aq',
+                  labelText: 'Primeiro',
                   labelStyle: TextStyle(color: Colors.black)),
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.black, fontSize: 25),
@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
             TextField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                  labelText: 'Segundo aq',
+                  labelText: 'Segundo',
                   labelStyle: TextStyle(color: Colors.black)),
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.black, fontSize: 25),

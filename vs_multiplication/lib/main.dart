@@ -44,7 +44,6 @@ class _HomeState extends State<Home> {
 _Construct(var1, var2, var3, class1) {
   return Scaffold(
     appBar: AppBar(title: _Title(), backgroundColor: Colors.red),
-    drawer: _Drawer(),
     body: _Body(var1, var2, var3, class1),
   );
 }
@@ -58,12 +57,6 @@ _Title() {
       fontSize: 20,
     ),
   );
-}
-
-// ignore: non_constant_identifier_names
-_Drawer() {
-  return Image.network(
-      'https://cdn.discordapp.com/attachments/574428204165758979/883069898123804683/GatinMatematico.png');
 }
 
 // ignore: non_constant_identifier_names
