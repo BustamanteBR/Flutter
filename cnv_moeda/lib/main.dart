@@ -27,27 +27,32 @@ class _HomeState extends State<Home> {
   String ans = '';
   double converted = 0;
   bool chg = true;
-  Color clr_chg = Colors.cyan;
+  Color clr_chg = Colors.green;
 
   void convert() {
     setState(() {
       chg = false;
       clr_chg = Colors.grey;
 
-      if (from == 'R\$' && to == 'U\$')converted = double.parse(value.text) / 5.49;
-      if (from == 'R\$' && to == '€')converted = double.parse(value.text) / 6.30;
-      if (from == 'R\$' && to == 'R\$')converted = double.parse(value.text);
+      if (from == 'R\$' && to == 'U\$')
+        converted = double.parse(value.text) / 5.49;
+      if (from == 'R\$' && to == '€')
+        converted = double.parse(value.text) / 6.30;
+      if (from == 'R\$' && to == 'R\$') converted = double.parse(value.text);
 
-      if (from == 'U\$' && to == 'R\$')converted = double.parse(value.text) * 5.49;
-      if (from == 'U\$' && to == '€')converted = double.parse(value.text) * 0.87;
-      if (from == 'U\$' && to == 'U\$')converted = double.parse(value.text);
+      if (from == 'U\$' && to == 'R\$')
+        converted = double.parse(value.text) * 5.49;
+      if (from == 'U\$' && to == '€')
+        converted = double.parse(value.text) * 0.87;
+      if (from == 'U\$' && to == 'U\$') converted = double.parse(value.text);
 
-      if (from == '€' && to == '€')converted = double.parse(value.text);
-      if (from == '€' && to == 'U\$')converted = double.parse(value.text) / 0.87;
-      if (from == '€' && to == 'R\$')converted = double.parse(value.text) * 6.30;
+      if (from == '€' && to == '€') converted = double.parse(value.text);
+      if (from == '€' && to == 'U\$')
+        converted = double.parse(value.text) / 0.87;
+      if (from == '€' && to == 'R\$')
+        converted = double.parse(value.text) * 6.30;
 
       ans = converted.toStringAsFixed(2);
-        
     });
   }
 
@@ -71,7 +76,7 @@ class _HomeState extends State<Home> {
     return AppBar(
       title: Text("Conversor de Moedas",
           style: TextStyle(fontSize: 20, color: Colors.white)),
-      backgroundColor: Colors.cyan,
+      backgroundColor: Colors.green,
       centerTitle: true,
     );
   }
@@ -83,7 +88,11 @@ class _HomeState extends State<Home> {
         //L T R B
         padding(
             row(padding(text('Valor:', 30, Colors.cyan), 30, 0, 0, 0),
-                padding(container(textfield(value), 60, 200), 10, 0, 0, 0)), 0, 20, 0, 10),
+                padding(container(textfield(value), 60, 200), 10, 0, 0, 0)),
+            0,
+            20,
+            0,
+            10),
         Row(children: <Widget>[
           padding(text('De:', 30, Colors.cyan), 30, 0, 0, 0),
           padding(dropdown_from(), 10, 0, 0, 0),
@@ -92,8 +101,12 @@ class _HomeState extends State<Home> {
         ]),
         padding(
             row(padding(button(), 0, 0, 10, 0),
-                padding(undo_button(), 10, 0, 0, 0)), 65, 20, 0, 0),
-        padding(anim_container(),0,20,0,0)
+                padding(undo_button(), 10, 0, 0, 0)),
+            65,
+            20,
+            0,
+            0),
+        padding(anim_container(), 0, 20, 0, 0)
       ],
     ));
   }
@@ -113,8 +126,7 @@ class _HomeState extends State<Home> {
         color: Colors.cyan,
         duration: const Duration(seconds: 1),
         curve: Curves.fastOutSlowIn,
-        child:
-            Center(child:text('$to $ans', 30, Colors.white)));
+        child: Center(child: text('$to $ans', 30, Colors.white)));
   }
 
   text(text, double size, color) {
